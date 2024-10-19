@@ -14,12 +14,14 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
+    background: linear-gradient(to bottom right, #e1d2b1, #f29831);
+    }
+
 
 header {
     display: flex;
     align-items: flex-start;
-    background-color: rgb(234, 232, 230);
+   
     min-height: 5vh;
 }
 
@@ -51,7 +53,7 @@ nav {
     display: flex;
     justify-content: space-around;
     padding: 1rem;
-    background-color: rgb(234, 232, 230);
+    
     min-height: 3vh;
 }
 
@@ -66,7 +68,7 @@ nav {
 }
 
 .boton:hover {
-    background-color: #ecc467;
+    background-color: #fd8300;
     color: black;
 }
 
@@ -74,7 +76,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: azure;
     flex-grow: 1;
 }
 
@@ -101,55 +102,49 @@ main {
     margin-bottom: 10px;
 }
 
+
+
 footer {
-    background-color:#246892;
+    background-color: #c7a168;
     display: flex;
     flex-direction: column;
     align-items: center;
     bottom: 0;
     min-height: 5vh;
+    margin-top: 40px;
 }
 
 footer .container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 0;
 }
 
-footer .links {
-    flex-basis: 1%;
-    margin-right: -92px;
-}
-
-footer .links ul {
-    list-style-type: disc;
+footer .links a {
     color: black;
+    text-decoration: none;
+    margin: 0 10px;
     padding-left: 20px;
     margin-top: 10px;
     margin-left: 20px;
-}
-
-footer .links ul li {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-footer .links a {
-    color: black;
+    font-size: 20px;
 }
 
 footer .networks {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-basis: 300%;
+
+ display: flex;
+justify-content: space-around;
+gap: 10px;
+flex-basis: 300%;}
+
+footer .networks a {
+    margin: 10px;
 }
 
 footer .networks img {
-    max-width: 100px;
+    width: 10vh;
 }
 
 footer .rights {
@@ -169,7 +164,7 @@ main .h1title {
 }
 
 .contenttext {
-    font-size: 20px;
+    font-size: 24px;
     justify-content: baseline;
 }
 
@@ -233,3 +228,122 @@ main .h1title {
     align-items: center;
     width: 100%;
   }
+
+
+  .image2 {
+    position: absolute;
+    width: 390px;
+    height: 272px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: translate(105px, -140px);
+    z-index: 3;
+}
+
+.image3 {
+    position: absolute;
+    width: 281px;
+    height: 224px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: translate(-175px, -57px);
+    z-index: 2;
+}
+
+
+.contact-form {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input[type="submit"] {
+    background-color: #246892;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #ecc467;
+    color: black;
+}
+
+
+
+.services-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+}
+
+.services-list li {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.services-description {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+
+
+.portfolio-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 24px;
+}
+
+.portfolio-item {
+    width: 300px; /* Adjust the width as needed */
+    margin: 24px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.portfolio-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-description {
+    margin-top: 10px;
+}
