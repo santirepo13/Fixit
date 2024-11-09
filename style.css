@@ -14,14 +14,16 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: linear-gradient(to bottom right, #e1d2b1, #f29831);
-    }
+    /* background: linear-gradient(to bottom right, #e1d2b1, #f29831); */
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+}
 
 
 header {
     display: flex;
     align-items: flex-start;
-   
+
     min-height: 5vh;
 }
 
@@ -53,7 +55,7 @@ nav {
     display: flex;
     justify-content: space-around;
     padding: 1rem;
-    
+
     min-height: 3vh;
 }
 
@@ -75,8 +77,8 @@ nav {
 main {
     display: flex;
     flex-direction: column;
-    align-items: center;
     flex-grow: 1;
+    min-height: 90vh;
 }
 
 .benefits {
@@ -96,6 +98,7 @@ main {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    list-style-position: inside;
 }
 
 .benefits li {
@@ -104,7 +107,7 @@ main {
 
 
 
-footer {
+/* footer {
     background-color: #c7a168;
     display: flex;
     flex-direction: column;
@@ -150,7 +153,7 @@ footer .networks img {
 footer .rights {
     text-align: center;
     margin-bottom: 5px;
-}
+} */
 
 main .h1title {
     justify-content: center;
@@ -159,8 +162,30 @@ main .h1title {
     margin-top: 20px;
 }
 
+main .h1title2 {
+    justify-content: left;
+    text-align: left;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
 .contentdiv {
-    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-left: 100px;
+    text-align: left;
+    align-items: left;
+
+}
+.contentdiv2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-left: 100px;
+    text-align: left;
+    align-items: left;
+
 }
 
 .contenttext {
@@ -174,15 +199,15 @@ main .h1title {
     justify-content: center;
     width: 60%;
     margin: 20px;
-  }
+}
 
-  .collage {
+.collage {
     position: relative;
     width: 60%;
     margin: 20px;
-  }
-  
-  .image1 {
+}
+
+.image1 {
     position: absolute;
     width: 300px;
     height: 200px;
@@ -190,10 +215,10 @@ main .h1title {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transform: translate(-183px, -164px);
     z-index: 1;
-   
-  }
-  
-  .image2 {
+
+}
+
+.image2 {
     position: absolute;
     width: 390px;
     height: 272px;
@@ -201,10 +226,10 @@ main .h1title {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transform: translate(105px, -140px);
     z-index: 3;
-   
-  }
-  
-  .image3 {
+
+}
+
+.image3 {
     position: absolute;
     width: 281px;
     height: 224px;
@@ -212,7 +237,7 @@ main .h1title {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transform: translate(-175px, -57px);
     z-index: 2;
-    
+
 }
 
 .organization {
@@ -220,17 +245,17 @@ main .h1title {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-  }
+}
 
-  .content {
+.content {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-  }
+}
 
 
-  .image2 {
+.image2 {
     position: absolute;
     width: 390px;
     height: 272px;
@@ -265,7 +290,8 @@ main .h1title {
     margin-bottom: 10px;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -293,15 +319,20 @@ main .h1title {
 }
 
 .services-list {
+    text-align: left;
     list-style-type: none;
-    padding: 0;
-    margin: 0;
     font-size: 24px;
 }
 
 .services-list li {
-    margin-bottom: 10px;
+    text-align: left;
     font-size: 24px;
+}
+
+.services-list ul {
+    list-style-position: inside;
+    text-align: left;
+
 }
 
 .services-description {
@@ -309,6 +340,9 @@ main .h1title {
     font-size: 24px;
 }
 
+.img1descript {
+    grid-column: 2;
+}
 
 
 .portfolio-section {
@@ -319,7 +353,8 @@ main .h1title {
 }
 
 .portfolio-item {
-    width: 300px; /* Adjust the width as needed */
+    width: 300px;
+    /* Adjust the width as needed */
     margin: 24px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -382,4 +417,406 @@ main .h1title {
 .reserve-btn:hover {
     background-color: #ecc467;
     color: black;
+}
+
+
+@media (min-width: 1px) and (max-width: 575px) {  
+    header {
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .info {
+        margin-top: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .boton {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .contentdiv {
+        padding: 20px;
+    }
+    .contentdiv2 {
+        grid-template-columns: 1fr;
+      }
+      .img1descript {
+        grid-row: 2;
+      }
+    
+    .img1descript {
+        grid-column: 1 / span 1;
+        grid-row: 2;
+        width: 100%;
+        height: auto;
+      }
+
+    .collage {
+        display: block;
+    }
+
+    .image1,
+    .image2,
+    .image3 {
+        position: relative; 
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+
+    .image1{ 
+        transform: translate(-1px, -90px);
+    }
+
+    .image2 {
+        transform: translate(1px, -99px);
+    }
+
+    .image3 {
+        transform: translate(1px, -68px);
+    }
+   .benefits { 
+    width: 46%;
+   }
+}
+
+@media (min-width: 576px) and (max-width: 764px) {  
+    header {
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .info {
+        margin-top: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .boton {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .contentdiv {
+        padding: 20px;
+    }
+
+    .collage {
+        display: block;
+    }
+
+    .image1,
+    .image2,
+    .image3 {
+        position: relative; 
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+
+    .image1{ 
+        transform: translate(-1px, -21px);
+    }
+
+    .image2 {
+        transform: translate(1px, -8px);
+    }
+
+    .image3 {
+        transform: translate(1px, 2px);
+    }
+   .benefits { 
+    width: 46%;
+   }
+
+   .contentdiv2 {
+    grid-template-columns: 1fr;
+  }
+  .img1descript {
+    grid-row: 2;
+  }
+
+.img1descript {
+    grid-column: 1 / span 1;
+    grid-row: 2;
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+   @media (min-width: 765px) and (max-width: 766px) {
+    header {
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .info {
+        margin-top: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .boton {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .contentdiv {
+        padding: 20px;
+    }
+
+    .contentdiv2 {
+        grid-template-columns: 1fr;
+      }
+      .img1descript {
+        grid-row: 2;
+      }
+    
+    .img1descript {
+        grid-column: 1 / span 1;
+        grid-row: 2;
+        width: 100%;
+        height: auto;
+      }
+
+    .collage {
+        display: block;
+    }
+
+    .image1,
+    .image2,
+    .image3 {
+        position: relative; 
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+
+    .image1{ 
+        transform: translate(-1px, -104px);
+    }
+
+    .image2 {
+        transform: translate(1px, -99px);
+    }
+
+    .image3 {
+        transform: translate(1px, -68px);
+    }
+   .benefits { 
+    width: 46%;
+   }
+   }
+   @media (min-width: 767px) and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .info {
+        margin-top: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .boton {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .contentdiv {
+        padding: 20px;
+    }
+    .contentdiv2 {
+        grid-template-columns: 1fr;
+      }
+      .img1descript {
+        grid-row: 2;
+      }
+    
+    .img1descript {
+        grid-column: 1 / span 1;
+        grid-row: 2;
+        width: 100%;
+        height: auto;
+      }
+
+    .collage {
+        display: block;
+    }
+
+    .image1,
+    .image2,
+    .image3 {
+        position: relative; 
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+
+    .image1{ 
+        transform: translate(-1px, -53px);
+    }
+
+    .image2 {
+        transform: translate(1px, -62px);
+    }
+
+    .image3 {
+        transform: translate(1px, -64px);
+    }
+   .benefits { 
+    width: 46%;
+   }
+
+}
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .logo {
+            width: 50%;
+        }
+
+        .info {
+            margin-top: 0;
+        }
+
+        nav {
+            flex-direction: row;
+        }
+
+        .boton {
+            margin-bottom: 0;
+            margin-right: 10px;
+        }
+        .contentdiv2 {
+            grid-template-columns: 1fr;
+          }
+          .img1descript {
+            grid-row: 2;
+          }
+        
+        .img1descript {
+            grid-column: 1 / span 1;
+            grid-row: 2;
+            width: 100%;
+            height: auto;
+          }
+    }
+
+    @media (min-width: 1025px) {
+    
+        }
+        .contenttext {
+            font-size: 24px;
+            justify-content: baseline;
+        }
+        
+        .collage {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 60%;
+            margin: 20px;
+        }
+        
+        .collage {
+            position: relative;
+            width: 60%;
+            margin: 20px;
+        }
+        
+        .image1 {
+            position: absolute;
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transform: translate(-183px, -164px);
+            z-index: 1;
+        
+        }
+        
+        .image2 {
+            position: absolute;
+            width: 390px;
+            height: 272px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transform: translate(105px, -140px);
+            z-index: 3;
+        
+        }
+        
+        .image3 {
+            position: absolute;
+            width: 281px;
+            height: 224px;
+            border-radius: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transform: translate(-175px, -57px);
+            z-index: 2;
+        
+        }
+        
+        .organization {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        
+        
+        .image2 {
+            position: absolute;
+            width: 390px;
+            height: 272px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transform: translate(105px, -140px);
+            z-index: 3;
+        }
+        
+        .image3 {
+            position: absolute;
+            width: 281px;
+            height: 224px;
+            border-radius: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transform: translate(-175px, -57px);
+            z-index: 2;
+        }
+        
+        
+        
+    }
 }
