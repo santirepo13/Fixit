@@ -1,0 +1,8 @@
+  @font-face {
+    font-family:"mangata1";
+       src: url(fonts/Mangata.ttf);
+       font-family:"kenyan";
+       src: url(fonts/kenyan.otf);
+       font-family:"panton";
+       src: url(fonts/panton.ttf);
+  }

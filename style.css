@@ -1,3 +1,4 @@
+@import url("fonts.css");
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,6 +18,7 @@ body {
     /* background: linear-gradient(to bottom right, #e1d2b1, #f29831); */
     background-image: url(images/background.png);
     background-repeat: no-repeat;
+   font-family: "kenyan" !important;
 }
 
 
@@ -419,404 +421,447 @@ main .h1title2 {
     color: black;
 }
 
+.contact-info {
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contact-info p { 
+    text-align: center;
+}
 
 @media (min-width: 1px) and (max-width: 575px) {  
     header {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     .logo {
-        width: 100%;
+        width: 100% !important;
     }
 
     .info {
-        margin-top: 20px;
+        margin-top: 20px !important;
     }
 
     nav {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     .boton {
-        margin-bottom: 10px;
-        width: 100%;
+        margin-bottom: 10px !important;
+        width: 100% !important;
     }
 
     .contentdiv {
-        padding: 20px;
+        padding: 20px !important;
     }
     .contentdiv2 {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
       }
       .img1descript {
-        grid-row: 2;
+        grid-row: 2 !important;
       }
     
     .img1descript {
-        grid-column: 1 / span 1;
-        grid-row: 2;
-        width: 100%;
-        height: auto;
+        grid-column: 1 / span 1 !important;
+        grid-row: 2 !important;
+        width: 100% !important;
+        height: auto !important;
       }
 
     .collage {
-        display: block;
+        display: block !important;
     }
 
     .image1,
     .image2,
     .image3 {
-        position: relative; 
-        width: 100%; 
-        margin-bottom: 20px; 
+        position: relative !important; 
+        width: 100% !important; 
+        margin-bottom: 20px !important; 
     }
 
 
     .image1{ 
-        transform: translate(-1px, -90px);
+        transform: translate(-1px, -90px) !important;
     }
 
     .image2 {
-        transform: translate(1px, -99px);
+        transform: translate(1px, -99px) !important;
     }
 
     .image3 {
-        transform: translate(1px, -68px);
+        transform: translate(1px, -68px) !important;
     }
    .benefits { 
-    width: 46%;
+    width: 46% !important;
    }
+   .portfolio-actions {
+    flex-direction: column !important; 
+}
+.price-btn {
+    margin-bottom: 10px !important; 
+}
+
+.reserve-btn {
+    width: 100% !important; 
+}
 }
 
 @media (min-width: 576px) and (max-width: 764px) {  
     header {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     .logo {
-        width: 100%;
+        width: 100% !important;
     }
 
     .info {
-        margin-top: 20px;
+        margin-top: 20px !important;
     }
 
     nav {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     .boton {
-        margin-bottom: 10px;
-        width: 100%;
+        margin-bottom: 10px !important;
+        width: 100% !important;
     }
 
     .contentdiv {
-        padding: 20px;
+        padding: 20px !important;
     }
 
     .collage {
-        display: block;
+        display: block !important;
     }
 
     .image1,
     .image2,
     .image3 {
-        position: relative; 
-        width: 100%; 
-        margin-bottom: 20px; 
+        position: relative !important; 
+        width: 100% !important; 
+        margin-bottom: 20px !important; 
     }
 
 
     .image1{ 
-        transform: translate(-1px, -21px);
+        transform: translate(-1px, -21px) !important;
     }
 
     .image2 {
-        transform: translate(1px, -8px);
+        transform: translate(1px, -8px) !important;
     }
 
     .image3 {
-        transform: translate(1px, 2px);
+        transform: translate(1px, 2px) !important;
     }
    .benefits { 
-    width: 46%;
+    width: 46% !important;
    }
 
    .contentdiv2 {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
   .img1descript {
-    grid-row: 2;
+    grid-row: 2 !important;
   }
 
 .img1descript {
-    grid-column: 1 / span 1;
-    grid-row: 2;
-    width: 100%;
-    height: auto;
+    grid-column: 1 / span 1 !important;
+    grid-row: 2 !important;
+    width: 100% !important;
+    height: auto !important;
   }
+
+  .portfolio-actions {
+    flex-direction: column !important; 
+}
+
+.price-btn {
+    margin-bottom: 10px !important;
+}
+
+.reserve-btn {
+    width: 100% !important; 
+}
+
 }
 
 
    @media (min-width: 765px) and (max-width: 766px) {
     header {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     .logo {
-        width: 100%;
+        width: 100% !important;
     }
 
     .info {
-        margin-top: 20px;
+        margin-top: 20px !important;
     }
 
     nav {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     .boton {
-        margin-bottom: 10px;
-        width: 100%;
+        margin-bottom: 10px !important;
+        width: 100% !important;
     }
 
     .contentdiv {
-        padding: 20px;
+        padding: 20px !important;
     }
 
     .contentdiv2 {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
       }
       .img1descript {
-        grid-row: 2;
+        grid-row: 2 !important;
       }
     
     .img1descript {
-        grid-column: 1 / span 1;
-        grid-row: 2;
-        width: 100%;
-        height: auto;
+        grid-column: 1 / span 1 !important;
+        grid-row: 2 !important;
+        width: 100% !important;
+        height: auto !important;
       }
 
     .collage {
-        display: block;
+        display: block !important;
     }
 
     .image1,
     .image2,
     .image3 {
-        position: relative; 
-        width: 100%; 
-        margin-bottom: 20px; 
+        position: relative !important; 
+        width: 100% !important; 
+        margin-bottom: 20px !important; 
     }
 
 
     .image1{ 
-        transform: translate(-1px, -104px);
+        transform: translate(-1px, -104px) !important;
     }
 
     .image2 {
-        transform: translate(1px, -99px);
+        transform: translate(1px, -99px) !important;
     }
 
     .image3 {
-        transform: translate(1px, -68px);
+        transform: translate(1px, -68px) !important;
     }
    .benefits { 
-    width: 46%;
+    width: 46% !important;
    }
+   .portfolio-actions {
+    flex-direction: column !important; 
+
+}
+
+.price-btn {
+    margin-bottom: 10px !important;
+}
+
+.reserve-btn {
+    width: 100% !important; 
+}
    }
    @media (min-width: 767px) and (max-width: 768px) {
     header {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     .logo {
-        width: 100%;
+        width: 100% !important;
     }
 
     .info {
-        margin-top: 20px;
+        margin-top: 20px !important;
     }
 
     nav {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     .boton {
-        margin-bottom: 10px;
-        width: 100%;
+        margin-bottom: 10px !important;
+        width: 100% !important;
     }
 
     .contentdiv {
-        padding: 20px;
+        padding: 20px !important;
     }
     .contentdiv2 {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
       }
       .img1descript {
-        grid-row: 2;
+        grid-row: 2 !important;
       }
     
     .img1descript {
-        grid-column: 1 / span 1;
-        grid-row: 2;
-        width: 100%;
-        height: auto;
+        grid-column: 1 / span 1 !important;
+        grid-row: 2 !important;
+        width: 100% !important;
+        height: auto !important;
       }
 
     .collage {
-        display: block;
+        display: block !important;
     }
 
     .image1,
     .image2,
     .image3 {
-        position: relative; 
-        width: 100%; 
-        margin-bottom: 20px; 
+        position: relative !important; 
+        width: 100% !important; 
+        margin-bottom: 20px !important; 
     }
 
 
     .image1{ 
-        transform: translate(-1px, -53px);
+        transform: translate(-1px, -53px) !important;
     }
 
     .image2 {
-        transform: translate(1px, -62px);
+        transform: translate(1px, -62px) !important;
     }
 
     .image3 {
-        transform: translate(1px, -64px);
+        transform: translate(1px, -64px) !important;
     }
    .benefits { 
-    width: 46%;
+    width: 46% !important;
    }
 
 }
     @media (min-width: 769px) and (max-width: 1024px) {
         .logo {
-            width: 50%;
+            width: 50% !important;
         }
 
         .info {
-            margin-top: 0;
+            margin-top: 0 !important;
         }
 
         nav {
-            flex-direction: row;
+            flex-direction: row !important;
         }
 
         .boton {
-            margin-bottom: 0;
-            margin-right: 10px;
+            margin-bottom: 0 !important;
+            margin-right: 10px !important;
         }
         .contentdiv2 {
-            grid-template-columns: 1fr;
+            grid-template-columns: 1fr !important;
           }
           .img1descript {
-            grid-row: 2;
+            grid-row: 2 !important;
           }
         
         .img1descript {
-            grid-column: 1 / span 1;
-            grid-row: 2;
-            width: 100%;
-            height: auto;
+            grid-column: 1 / span 1 !important;
+            grid-row: 2 !important;
+            width: 100% !important;
+            height: auto !important;
           }
     }
 
     @media (min-width: 1025px) {
     
-        }
+        
         .contenttext {
-            font-size: 24px;
-            justify-content: baseline;
+            font-size: 24px !important;
+            justify-content: baseline !important;
         }
         
         .collage {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            width: 60%;
-            margin: 20px;
+            display: flex !important;
+            flex-wrap: wrap !important;
+            justify-content: center !important;
+            width: 60% !important;
+            margin: 20px !important;
         }
         
         .collage {
-            position: relative;
-            width: 60%;
-            margin: 20px;
+            position: relative !important;
+            width: 60% !important;
+            margin: 20px !important;
         }
         
         .image1 {
-            position: absolute;
-            width: 300px;
-            height: 200px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            transform: translate(-183px, -164px);
-            z-index: 1;
+            position: absolute !important;
+            width: 300px !important;
+            height: 200px !important;
+            border-radius: 10px !important;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+            transform: translate(-183px, -164px) !important;
+            z-index: 1 !important;
         
         }
         
         .image2 {
-            position: absolute;
-            width: 390px;
-            height: 272px;
-            border-radius: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            transform: translate(105px, -140px);
-            z-index: 3;
+            position: absolute !important;
+            width: 390px !important;
+            height: 272px !important;
+            border-radius: 20px !important;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+            transform: translate(105px, -140px) !important;
+            z-index: 3 !important;
         
         }
         
         .image3 {
-            position: absolute;
-            width: 281px;
-            height: 224px;
-            border-radius: 30px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            transform: translate(-175px, -57px);
-            z-index: 2;
+            position: absolute !important;
+            width: 281px !important;
+            height: 224px !important;
+            border-radius: 30px !important;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+            transform: translate(-175px, -57px) !important;
+            z-index: 2 !important;
         
         }
         
         .organization {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            width: 100%;
+            display: flex !important;
+            justify-content: space-around !important;
+            align-items: center !important;
+            width: 100% !important;
         }
         
         .content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            width: 100% !important;
         }
         
         
         .image2 {
-            position: absolute;
-            width: 390px;
-            height: 272px;
-            border-radius: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            transform: translate(105px, -140px);
-            z-index: 3;
+            position: absolute !important;
+            width: 390px !important;
+            height: 272px !important;
+            border-radius: 20px !important;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+            transform: translate(105px, -140px) !important;
+            z-index: 3 !important;
         }
         
         .image3 {
-            position: absolute;
-            width: 281px;
-            height: 224px;
-            border-radius: 30px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            transform: translate(-175px, -57px);
-            z-index: 2;
+            position: absolute !important;
+            width: 281px !important;
+            height: 224px !important;
+            border-radius: 30px !important;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+            transform: translate(-175px, -57px) !important;
+            z-index: 2 !important;
         }
         
         
-        
     }
-}
+    
